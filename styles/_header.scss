@@ -1,0 +1,63 @@
+@use "./variables";
+
+header {
+  background-color: variables.$header-color;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+
+    a {
+      color: variables.$main-color;
+    }
+
+    #menu-btn {
+      font-size: 28px;
+      color: variables.$main-color;
+      cursor: pointer;
+      display: none;
+    }
+
+    .logo {
+      font-size: 24px;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      a {
+        font-size: 20px;
+      }
+    }
+    #basket-btn {
+      font-size: 25px;
+      cursor: pointer;
+      position: relative;
+    }
+    #basket-btn:after {
+      content: attr(data-quantity);
+      position: absolute;
+      top: 0;
+      right: -15px;
+      font-style: normal;
+      font-size: 13px;
+      background-color: variables.$main-color;
+      color: variables.$bg-color;
+      width: 20px;
+      height: 20px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      font-weight: bold;
+    }
+  }
+}

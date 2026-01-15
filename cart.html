@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- *Css Connection -->
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- *Bootstrapt Icons Connection -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <title>COSTY</title>
+  </head>
+  <body>
+    <!-- *Header -->
+
+    <header>
+      <div class="container">
+        <!--menu buttton  -->
+        <i class="bi bi-list" id="menu-btn"></i>
+        <!-- Logo    -->
+
+        <a href="./index.html" class="logo">COSTY</a>
+
+        <!-- nav -->
+
+        <nav>
+          <a href="#">Woman</a>
+          <a href="#">Man</a>
+          <a href="#">Kids</a>
+          <a href="#">Accessories</a>
+        </nav>
+
+        <!-- basket icon -->
+
+        <a href="./cart.html"
+          ><i class="bi bi-bag-plus-fill" data-quantity="0" id="basket-btn"></i
+        ></a>
+      </div>
+    </header>
+    <!-- *Cart container -->
+
+    <section class="cart-container container">
+      <!-- button -->
+      <a href="./index.html" class="back-to-home-button">
+        <i class="bi bi-chevron-left"></i> <span>Back to home</span></a
+      >
+      <!-- title -->
+
+      <h2 class="cart-title">Shopping Cart</h2>
+
+      <div class="cart-wrapper">
+        <!-- cart-items -->
+
+        <div class="cart-items">
+          <!-- cart-item -->
+          <!-- <div class="cart-item">
+            <img
+              src="https://img01.ztat.net/article/spp-media-p1/7067458719b744fe81ffee62d3d0b912/abad421e7d8e47f08a2abc1c6ffe07dc.jpg?imwidth=1800"
+              alt="cart-item-img"
+            />
+            <div class="cart-item-info">
+              <h2 class="cart-item-title">Champion Basic</h2>
+              <input
+                type="number"
+                min="1"
+                value="1"
+                class="cart-item-quantity"
+              />
+            </div>
+           
+            <h3 class="cart-item-price">$48.99</h3>
+            <button class="remove-button">Remove</button>
+          </div> -->
+        </div>
+
+        <div class="cart-checkbox">
+          <!-- total price -->
+
+          <h2>Total: <span class="cart-total">$ 0</span></h2>
+          <!-- checkout button  -->
+
+          <button class="checkout-btn">Checkout</button>
+
+          <!-- fee -->
+          <p class="fee-title">Under $100 free shipping</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- *Js Connection -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
